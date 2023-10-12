@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <title>Landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,7 +19,7 @@
 </head>
 <body>
 
-  <header class="container">
+  <header class="container font_raleway">
     <figure class="header__figure">
       <img src="images/logo.svg" alt="Logo Fylo" class="header__logo">
     </figure>
@@ -30,58 +30,132 @@
     </nav>
   </header>
 
+  <section class="container container__section">
+    <div class="access">
+      <figure class="access__figure">
+        <img src="/images/illustration-1.svg" alt="" class="access__img">
+      </figure>
+      <div class="access__texts">
+        <h1 class="title">All your files in one secure location, accessible anywhere.</h1>
+        <p class="paragraph">
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
+      </div>
+      <form class="access__form">
+        <input type="email" class="access__email" placeholder="Enter your email">
+        <a href="" class="access__cta font_raleway">Get Started</a>
+      </form>
+    </div>
+    <div class="wave wave--bottom"></div>
+  </section>
+
+  <section class="description">
+    <div class="access content">
+      <figure class="access__figure">
+        <img src="/images/illustration-2.svg" alt="" class="access__img">
+      </figure>
+      <div class="access__texts">
+        <h4 class="title-second font_raleway">Stay productive, wherever you are</h4>
+        <p class="paragraph justify">
+          Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.
+        </p>
+        <p class="paragraph justify">
+          Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!
+        </p>
+      </div> 
+      <div class="cta_arrow">
+        <a href="#" class="cta font_raleway">See how Fylo works</a> 
+        <img src="images/icon-arrow.svg" class="icon-arrow">  
+      </div>
+      <div class="card">
+        <img src="images/icon-quotes.svg" alt="">
+        <p class="text">Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="avatar">
+          <img src="/images/avatar-testimonial.jpg" class="avatar__img">
+          <div class="firma">
+            <p class="nombre">Kyle Burton</p>
+            <p class="cargo">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section-last">
+      <div class="access">
+        <div class="access__texts">
+          <h3 class="title-third font_raleway">Get early access today</h3>
+          <p class="paragraph">
+            It only takes a minute to sign up and our free starter tier is extremely generous. 
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
+        <form class="last-form">
+          <input type="email" class="access__email" placeholder="email@example.com">
+          <a href="#" class="last-cta font_raleway">Get Started For Free</a>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <figure class="footer__figure">
+          <img src="images/logo-blanco.svg" class="footer_img">
+        </figure>
+        <div class="contact">
+          <img src="images/icon-phone.svg" alt="">
+          <p class="phone">Phone: +1-543-123-4567</p>
+        </div>  
+        <div class="contact">
+          <img src="images/icon-email.svg" alt="">
+          <p class="email">example@fylo.com</p>
+        </div>
+        <div class="lista">
+          <p>About Us</p>
+          <p>Jobs</p>
+          <p>Press</p>
+          <p>Blog</p>
+        </div>
+        <div class="lista">
+          <p>Contact Us</p>
+          <p>Terms</p>
+          <p>Privacy</p>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="circle"><img src="images/fb.svg" class="icon"></div>
+        <div class="circle"><img src="images/twitter.svg" class="icon"></div>
+        <div class="circle"><img src="images/instagram.svg" class="icon"></div>
+        
+        
+        
+      </div>
+    </footer>
+
+  
+<!-- 
+    
   
   
- 
 
-  All your files in one secure location, accessible anywhere.
+  
+  
+  
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+  
+  
+   -->
 
-  Get Started
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://ivanafrontroth-portfolio.vercel.app/">Ivana Frontroth</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 </html>
