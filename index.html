@@ -19,18 +19,18 @@
 </head>
 <body>
 
-  <header class="container font_raleway">
+  <header class="container font_raleway mx">
     <figure class="header__figure">
       <img src="images/logo.svg" alt="Logo Fylo" class="header__logo">
     </figure>
     <nav class="header__nav">
-      <a href="" class="header__item">Features</a>
-      <a href="" class="header__item">Team</a>
-      <a href="" class="header__item">Sign In</a>
+      <a href="#" class="header__item">Features</a>
+      <a href="#" class="header__item">Team</a>
+      <a href="#" class="header__item">Sign In</a>
     </nav>
   </header>
 
-  <section class="container container__section">
+  <section class="container container__section mx">
     <div class="access">
       <figure class="access__figure">
         <img src="/images/illustration-1.svg" alt="" class="access__img">
@@ -42,79 +42,85 @@
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.
         </p>
+        <form class="access__form">
+          <input type="email" class="access__email" placeholder="Enter your email">
+          <a href="" class="access__cta font_raleway">Get Started</a>
+        </form>
       </div>
-      <form class="access__form">
-        <input type="email" class="access__email" placeholder="Enter your email">
-        <a href="" class="access__cta font_raleway">Get Started</a>
-      </form>
     </div>
     <div class="wave wave--bottom"></div>
   </section>
 
-  <section class="description">
-    <div class="access content">
+  <section class="description mx">
+    <div class="access">
       <figure class="access__figure">
         <img src="/images/illustration-2.svg" alt="" class="access__img">
       </figure>
-      <div class="access__texts">
-        <h3 class="title-second font_raleway">Stay productive, wherever you are</h3>
-        <p class="paragraph justify">
-          Never let location be an issue when accessing your files. Fylo has you 
-          covered for all of your file storage needs.
-        </p>
-        <p class="paragraph justify">
-          Securely share files and folders with friends, family and colleagues for 
-          live collaboration. No email attachments required!
-        </p>
-      </div> 
-      <div class="cta_arrow">
-        <a href="#" class="cta font_raleway">See how Fylo works</a> 
-        <img src="images/icon-arrow.svg" class="icon-arrow">  
-      </div>
-      <div class="card">
-        <img src="images/icon-quotes.svg" alt="">
-        <p class="text">Fylo has improved our team productivity by an order of magnitude. Since 
-          making the switch our team has become a well-oiled collaboration machine.</p>
-        <div class="avatar">
-          <img src="/images/avatar-testimonial.jpg" class="avatar__img">
-          <div class="firma">
-            <p class="nombre">Kyle Burton</p>
-            <p class="cargo">Founder & CEO, Huddle</p>
+      <div class="content__texts">
+        <div>
+          <h3 class="title-second font_raleway">Stay productive, wherever you are</h3>
+          <p class="paragraphtwo">
+            Never let location be an issue when accessing your files. Fylo has you 
+            covered for all of your file storage needs.
+          </p>
+          <p class="paragraphtwo">
+            Securely share files and folders with friends, family and colleagues for 
+            live collaboration. No email attachments required!
+          </p>
+        </div> 
+        <div class="cta_arrow">
+          <a href="#" class="cta font_raleway">
+            See how Fylo works
+            <img src="images/icon-arrow.svg" class="icon-arrow">
+          </a>             
+        </div>
+        <div class="card">
+          <img src="images/icon-quotes.svg" alt="">
+          <p class="text">Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.</p>
+          <div class="avatar">
+            <img src="/images/avatar-testimonial.jpg" class="avatar__img">
+            <div class="firma">
+              <p class="nombre">Kyle Burton</p>
+              <p class="cargo">Founder & CEO, Huddle</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-    <section class="section-last">
-      <div class="access">
-        <div class="access__texts">
+  <section class="section-last mx">
+      <div class="third">
+        <div class="third__text">
           <h3 class="title-third font_raleway">Get early access today</h3>
-          <p class="paragraph">
-            It only takes a minute to sign up and our free starter tier is extremely generous. 
+          <p class="paragraphthird">
+            It only takes a minute to sign up and our free starter tier is extremely generous.
             If you have any questions, our support team would be happy to help you.
           </p>
         </div>
         <form class="last-form">
-          <input type="email" class="access__email" placeholder="email@example.com">
+          <input type="email" class="last-email" placeholder="email@example.com">
           <a href="#" class="last-cta font_raleway">Get Started For Free</a>
         </form>
       </div>
-    </section>
+  </section>
 
     <footer class="footer">
       <div class="footer__container">
-        <figure class="footer__figure">
-          <img src="images/logo-blanco.svg" class="footer_img">
-        </figure>
-        <div class="contact">
-          <img src="images/icon-phone.svg" alt="">
-          <p class="phone">Phone: +1-543-123-4567</p>
-        </div>  
-        <div class="contact">
-          <img src="images/icon-email.svg" alt="">
-          <p class="email">example@fylo.com</p>
-        </div>
+        <div class="footer__contact">
+          <figure class="footer__figure">
+            <img src="images/logo-blanco.svg" class="footer_img">
+          </figure>
+          <div class="contact">
+            <img src="images/icon-phone.svg" alt="">
+            <p class="phone">Phone: +1-543-123-4567</p>
+          </div>  
+          <div class="contact">
+            <img src="images/icon-email.svg" alt="">
+            <p class="email">example@fylo.com</p>
+          </div>
+      </div>
         <div class="lista">
           <p>About Us</p>
           <p>Jobs</p>
@@ -131,9 +137,6 @@
         <div class="circle"><img src="images/fb.svg" class="icon"></div>
         <div class="circle"><img src="images/twitter.svg" class="icon"></div>
         <div class="circle"><img src="images/instagram.svg" class="icon"></div>
-        
-        
-        
       </div>
     </footer>
 
