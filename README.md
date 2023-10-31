@@ -32,7 +32,7 @@ Los usuarios deberían poder:
 
 ### Links
 
-- URL de la solucion: [CHALLENGE-huddle-landing-page-with-single-introductory-section-master](https://ivatroth.github.io/CHALLENGE-huddle-landing-page-with-single-introductory-section-master/)
+- URL de la solucion: [CHALLENGE-Landing-page-with-two-column-layout](https://ivatroth.github.io/CHALLENGE-Landing-page-with-two-column-layout/)
 
 
 ## My process
