@@ -96,9 +96,13 @@ body{
 }
 
 .email{
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-family: var(--raleway);
+  border: none;
+  box-shadow: 0px 0px 1px 1px #c7c6c6;
+  outline: none;
 }
+
 .cta{
   font-weight: 700;
   color: #fff;
@@ -242,12 +246,17 @@ body{
   gap:10px;
 }
 
+.form-two{
+  width: 80%;
+}
+
 .last-email{
   font-size: 10px;
   padding: 10px;
-  width: 80%;
+  width: 100%;
   border: none;
-  box-shadow: 1px 1px 0px 0px #c7c6c6;
+  box-shadow: 0px 0px 1px 1px #c7c6c6;
+  outline: none;
 }
 
 .last-cta{
@@ -318,13 +327,51 @@ body{
   gap: 10px
 }
 
-.icon{
-  width: 25px;
-  border: 1px solid #fff;
+
+.social-media i {
+  color: #fff;
+  border: 2px solid #fff;
+  font-size:1rem;
+  cursor: pointer;
+  padding: 5px;
   border-radius: 50%;
-  padding: 3px;
 }
 
+.social-media .fa-facebook-f{
+  padding: 5px 8px;
+}
+
+.social-media .fa-instagram{
+  padding: 5px 6px;
+}
+
+/* hovers */
+
+.lista p:hover {
+  color: var(--bright-blue);
+  cursor: pointer;
+}
+
+.social-media i:hover {
+  color: var(--bright-blue);
+  border:2px solid var(--bright-blue);
+}
+
+/* Validacion */
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-left: 25px;
+}
+
+.email:invalid{
+  border: 1px solid red;
+}
+
+.last-email:invalid{
+  border: 1px solid red;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -342,7 +389,8 @@ body{
 
   .form-one{
     flex-direction: row;
-    margin: 0 25px ;
+    gap: 10px;
+    margin: 10px 25px ;
   }
   
   .text{

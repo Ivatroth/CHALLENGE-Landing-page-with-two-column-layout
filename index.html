@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
+    <script src="https://kit.fontawesome.com/cb48e5d5ae.js" crossorigin="anonymous"></script>
+
     <link rel="icon" type="/image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,9 +43,11 @@
           </p>
         </div>
         <form class="form-one">
-          <input type="email" class="email" placeholder="Enter your email">
-          <a href="" class="cta">Get Started</a>
-        </form>
+            <input type="email" id="email" name="email" class="email" placeholder="Enter your email">
+            <a href="#" class="cta">Get Started</a>
+          </form>
+          <div id="email-error-message" class="error-message"></div>
+        <!-- <div id="email-error-message" class="error-message"></div> -->
       </div>
     </section>
 
@@ -94,9 +98,13 @@
         </p>
       </div>
       <form class="last-form">
-        <input type="email" class="last-email" placeholder="email@example.com">
+        <div class="form-two">
+          <input type="email" id="last-email" class="last-email" placeholder="email@example.com">
+          <div id="email-error-message2" class="last-error-message"></div>
+        </div>
         <a href="#" class="last-cta">Get Started For Free</a>
       </form>
+      
     </section>
 
     <footer class="footer">
@@ -127,12 +135,33 @@
         </div>
       </div>
       <div class="social-media">
-        <img src="images/fb.svg" class="icon">
-        <img src="images/twitter.svg" class="icon">
-        <img src="images/instagram.svg" class="icon">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
     </footer>
 
   </main>
 </body>
+<script>
+  document.getElementById("email").addEventListener("input", function(event) {
+    var emailInput = event.target;
+    var errorMessage = document.getElementById("email-error-message");
+    if (emailInput.validity.valid) {
+      errorMessage.textContent = ""; // Limpiar el mensaje de error si el correo es válido
+    } else {
+      errorMessage.textContent = "Pleace check your email.";
+    }
+  });
+
+  document.getElementById("last-email").addEventListener("input", function(event) {
+    var emailInput = event.target;
+    var errorMessage = document.getElementById("email-error-message2");
+    if (emailInput.validity.valid) {
+      errorMessage.textContent = ""; // Limpiar el mensaje de error si el correo es válido
+    } else {
+      errorMessage.textContent = "Pleace check your email.";
+    }
+  });
+</script>
 </html>
